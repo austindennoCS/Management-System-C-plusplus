@@ -1,66 +1,26 @@
-<h1 id="top">Secure Password Generator - PowerShell Script</h1>
 
-<h2>Table of Contents</h2>
-
-- [Overview](#overview)
-- [Purpose and Use Cases](#purpose-and-use-cases)
-- [Why It’s a Great Program](#why-its-a-great-program)
-- [Code Explanation](#code-explanation)
-  - [Documentation Header](#documentation-header)
-  - [Function Definition](#function-definition)
-  - [Character Sets](#character-sets)
-  - [Conditional Inclusion](#conditional-inclusion)
-  - [Password Generation Loop](#password-generation-loop)
-  - [Password Length Input](#password-length-input)
-  - [Symbol and Number Inclusion](#symbol-and-number-inclusion)
-  - [Password Count Input](#password-count-input)
-  - [Password Generation Call](#password-generation-call)
-  
-<h2 id="overview">Overview</h2>
-<b>This project covered key programming fundamentals starting with basic coding principles and advancing through essential concepts like variables, control structures, arrays, and pointers. It emphasized practical applications like data management and modular coding, culminating in object-oriented programming.</b>
-
-<h2 id="purpose-and-use-cases">Degree.h</h2>
-<b>Purpose:</b>
 The code defines a special type called enum for categorizing degree programs into three options: SECURITY, NETWORK, and SOFTWARE. Each option in the enum corresponds to a number (0, 1, 2), making it easy to work with in the program. There's an array of strings that matches each enum value with a textual description, allowing these numerical values to be converted back into readable text like "SECURITY" or "NETWORK." A function is provided to enable printing of these enum values directly in a more human-friendly format, using the text descriptions. This setup simplifies handling specific categories (degree programs) in the code, ensuring it is easy to maintain and understand.
-<b>Use Cases:</b>
-<ul>
-    <li><b>Personal Use:</b> Individuals can use the script to create strong passwords for their personal accounts, ensuring their online security.</li>
-    <li><b>Corporate Use:</b> IT departments can utilize the script to generate passwords for employees, ensuring compliance with security policies.</li>
-    <li><b>Development:</b> Developers can integrate the script into larger applications requiring secure password generation.</li>
-</ul>
 
-<h2 id="why-its-a-great-program">Why It’s a Great Program</h2>
-<ul>
-    <li><b>Customizable:</b> Users can specify password length, inclusion of symbols, and the number of passwords, catering to different security needs.</li>
-    <li><b>User-Friendly:</b> The script prompts users for inputs and provides clear instructions, making it easy to use even for those with limited technical expertise.</li>
-    <li><b>Secure:</b> By including a mix of uppercase, lowercase, numbers, and special characters, the generated passwords are highly secure and resistant to brute force attacks.</li>
-    <li><b>Scalable:</b> Users can generate up to 1000 passwords in one go, making it suitable for both individual and large-scale use.</li>
-</ul>
 
-<h2 id="code-explanation">Code Explanation</h2>
-<h3 id="documentation-header">Documentation Header</h3>
-<p>Provides an overview of the script, describing its purpose, parameters, and usage examples. This makes the script easy to understand and use.</p>
 
-<h3 id="function-definition">Function Definition</h3>
-<p>The function definition includes parameters that allow users to customize the password generation process. These parameters include the desired length of the password, whether to include symbols and numbers, and the number of passwords to generate. Customization is crucial for meeting various security requirements.</p>
+The provided code defines a C++ class named Student, structured to encapsulate and manage details about a student's identity and academic achievements. This class includes various private attributes, such as student ID, names, email, age, course completion times, and degree program, with the latter categorized using an enumeration from another file (degree.h). It features both a default and a parameterized constructor for initializing objects and a destructor for proper resource management upon an object's termination. The class is equipped with accessor and mutator methods for safe interaction with the student's data and includes functionality to print detailed student information and headers for lists, enhancing data presentation in console outputs. Constants like daysArraySize help maintain uniform handling of arrays representing course durations, facilitating consistent data operations across the class.
 
-<h3 id="character-sets">Character Sets</h3>
-<p>Defines the sets of characters (lowercase, uppercase, numbers, and symbols) that can be used in password generation. By default, it includes both lowercase and uppercase letters. This ensures a robust combination of characters, enhancing the password's strength and complexity.</p>
 
-<h3 id="conditional-inclusion">Conditional Inclusion</h3>
-<p>Modifies the character set based on user inputs, including numbers and/or symbols if specified. This feature allows users to tailor the password complexity to meet specific security policies, making the passwords more resistant to various types of attacks.</p>
 
-<h3 id="password-generation-loop">Password Generation Loop</h3>
-<p>Generates the specified number of passwords. Each password is created by randomly selecting characters from the combined set. This randomness ensures that the passwords are unpredictable and secure.</p>
+The `Student` class in C++ features a robust implementation with specialized constructors and a destructor. The default constructor initializes new `Student` objects with predefined values including an empty state for strings and zeros for numerical fields, setting the degree program to SECURITY. The parameterized constructor allows for custom initialization, precisely assigning provided values to the object's attributes and handling array copying efficiently. Accessor and mutator functions enable secure interaction with the object's attributes, facilitating data retrieval and updates. Additionally, the class includes print functionalities that display student details in a structured format, enhancing readability for lists of students in console outputs.
 
-<h3 id="password-length-input">Password Length Input</h3>
-<p>Prompts the user for the password length and validates that it is between 10 and 16 characters. Setting constraints on the length ensures that the passwords are neither too short (and therefore insecure) nor unnecessarily long (which might be impractical).</p>
 
-<h3 id="symbol-and-number-inclusion">Symbol and Number Inclusion</h3>
-<p>Asks the user whether to include symbols and numbers in the passwords, setting the corresponding flags based on the input. Including symbols and numbers significantly increases password complexity, making them more secure against brute-force and dictionary attacks.</p>
 
-<h3 id="password-count-input">Password Count Input</h3>
-<p>Prompts the user for the number of passwords to generate, ensuring the input is between 1 and 1000. Limiting the number of passwords prevents misuse and ensures practical use of the script.</p>
+The `Roster` class in C++ serves as a comprehensive system for managing student records, featuring both data members and a variety of methods to handle student data effectively. Key data members include `lastIndex`, tracking the last filled index in `classRosterArray`, and `numStudents`, which sets the roster limit to five students. The array `classRosterArray` holds pointers to `Student` objects, facilitating direct manipulation of student records. Among its methods, the class offers functionality to add and remove students, print student details, validate email formats, and calculate average course completion times. A destructor ensures proper cleanup by deallocating memory for dynamically stored students, underscoring the class’s role in efficient data management and promoting scalability in academic or similar systems.
 
-<h3 id="password-generation-call">Password Generation Call</h3>
-<p>Calls the function with the user-specified parameters to generate and display the passwords. This step consolidates all the user inputs and executes the password generation process, providing the final output.</p>
+
+
+The `Roster` class in C++ effectively manages a collection of `Student` objects, providing robust functionalities for processing student data. The `parse` function extracts and adds student details from strings, while the `add` function incorporates new students into `classRosterArray`, monitoring the roster's capacity. Key functions like `getStudentID`, `printAll`, `printInvalidEmails`, and `printByDegreeProgram` offer access, display, and sorting capabilities. The `printAverageDaysInCourse` and `removeStudentByID` functions handle course completion statistics and orderly student removal. The destructor ensures clean memory management by deallocating all student objects, maintaining system integrity and demonstrating the class's commitment to efficient data management and object-oriented principles.
+
+
+
+
+This C++ program features a `Header` function that outputs fixed data such as course title, programming language, student ID, and a name, serving as a template for real-world applications. The `Main` function processes an array of student data formatted in a JSON-like string, which requires conversion for the `parse` method to handle. This method, part of the `Roster` class, extracts and processes student information from these strings to create and manage `Student` objects. Display functions within the `Roster` class include `printAll()`, which displays all student records, `printInvalidEmails()` that identifies and shows records with incorrect email formats, and `printAverageDaysInCourse()` which calculates and displays the average completion days for courses. Additionally, `printByDegreeProgram` function allows for filtering and displaying students based on their degree program.
+
+
+
