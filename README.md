@@ -19,12 +19,9 @@
 <h2 id="overview">Overview</h2>
 <b>This project covered key programming fundamentals starting with basic coding principles and advancing through essential concepts like variables, control structures, arrays, and pointers. It emphasized practical applications like data management and modular coding, culminating in object-oriented programming.</b>
 
-<h2 id="purpose-and-use-cases">Purpose and Use Cases</h2>
+<h2 id="purpose-and-use-cases">Degree.h</h2>
 <b>Purpose:</b>
-<ul>
-    <li>To generate secure passwords that can protect against unauthorized access and security breaches.</li>
-    <li>To provide customizable options for password generation, meeting diverse security requirements.</li>
-</ul>
+The code defines a special type called enum for categorizing degree programs into three options: SECURITY, NETWORK, and SOFTWARE. Each option in the enum corresponds to a number (0, 1, 2), making it easy to work with in the program. There's an array of strings that matches each enum value with a textual description, allowing these numerical values to be converted back into readable text like "SECURITY" or "NETWORK." A function is provided to enable printing of these enum values directly in a more human-friendly format, using the text descriptions. This setup simplifies handling specific categories (degree programs) in the code, ensuring it is easy to maintain and understand.
 <b>Use Cases:</b>
 <ul>
     <li><b>Personal Use:</b> Individuals can use the script to create strong passwords for their personal accounts, ensuring their online security.</li>
