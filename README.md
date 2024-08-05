@@ -8,7 +8,7 @@
 - [Pointers and Memory](#pointers-and-memory)
 - [Functions](#functions)
 - [Object-Oriented Programming](#object-oriented-programming)
-- [Summary](#summary)
+- [Summary Foundations](#summary-foundations)
 - [Overview](#overview)
 - [Student Class](#student-class)
 - [Roster Class](#roster-class)
@@ -38,7 +38,7 @@
 <h2>Object-Oriented Programming</h2>
 <b>Examines object-oriented programming concepts to design and implement software using classes and objects, facilitating the development of scalable and maintainable code bases.</b>
 
-<h2>Summary</h2>
+<h2>Summary Foundations</h2>
 <b>This overview encapsulates the critical aspects of programming fundamentals, from basic syntax to complex concepts like object-oriented programming. The discussion emphasizes practical applications and the significance of structured programming in building robust software solutions.</b>
 
 
