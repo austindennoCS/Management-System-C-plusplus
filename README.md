@@ -17,7 +17,7 @@
   - [Password Generation Call](#password-generation-call)
   
 <h2 id="overview">Overview</h2>
-<b>The Secure Password Generator is a PowerShell script designed to create highly secure and customizable passwords. This script offers users the flexibility to specify the length of the password, include special characters, and determine the number of passwords to generate. It is an essential tool for individuals and organizations aiming to enhance their cybersecurity posture by generating strong, unpredictable passwords.</b>
+<b>This project covered key programming fundamentals starting with basic coding principles and advancing through essential concepts like variables, control structures, arrays, and pointers. It emphasized practical applications like data management and modular coding, culminating in object-oriented programming to equip students with the skills to build sophisticated, maintainable software projects.</b>
 
 <h2 id="purpose-and-use-cases">Purpose and Use Cases</h2>
 <b>Purpose:</b>
